@@ -1,0 +1,9 @@
+div p{
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* The suggested solution doesn't work. this still works and it seem to illustrate the point
+/*div alone did work, but div p is what provided the white space between the last two lines on the page.
