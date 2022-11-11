@@ -24,11 +24,12 @@ body {
   justify-content: left;
 }
 
-/*.icon-header-close {
+.icon-header-close {
   display:flex;
-  justify-content: space-between;
-  align-items:baseline;
-}*/
+  flex-direction:row;
+  /*justify-content: space-between;
+  align-items:baseline;*/
+}
 
 
 .icon {
@@ -56,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self:left;
+  justify-self:flex-end;
 
 }
 
@@ -69,6 +70,7 @@ button {
   display:inline-flex;
   margin-left:45px; /*to align with endof icon*/
   margin-top:8px;
+  gap:6px;
 
 }
 
@@ -86,7 +88,13 @@ button.cancel {
 
 .header {
   font-weight: bolder;
+  font-size: large;
+  align-self:center;
+  margin-left:6px; /*so that the heading matches up with the text exactly*/
+  flex-basis:95%;/*my attempt to get the header to take up more space so that I can push the close button to the right side.*/
+  
 }
+
 
 .text {
   margin-left:45px;
