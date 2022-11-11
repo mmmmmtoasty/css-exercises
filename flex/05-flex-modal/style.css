@@ -24,11 +24,11 @@ body {
   justify-content: left;
 }
 
-.icon-header-close {
+/*.icon-header-close {
   display:flex;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
   align-items:baseline;
-}
+}*/
 
 
 .icon {
@@ -65,6 +65,13 @@ button {
   border-radius: 8px;
 }
 
+.button-container {
+  display:inline-flex;
+  margin-left:45px; /*to align with endof icon*/
+  margin-top:8px;
+
+}
+
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
@@ -79,4 +86,8 @@ button.cancel {
 
 .header {
   font-weight: bolder;
+}
+
+.text {
+  margin-left:45px;
 }
