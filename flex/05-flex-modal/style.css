@@ -22,14 +22,14 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   padding:10px;
   justify-content: left;
-}
+}/*really?? i forgot to make this a flex container??*/
 
 .icon-header-close {
   display:flex;
   flex-direction:row;
   /*justify-content: space-between;
   align-items:baseline;*/
-}
+}/*technically didn't have to do this; I could have just made the .modal a flexbox and it would have done the same thing*/
 
 
 .icon {
@@ -43,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  flex-shrink:0;
 }
 
 .close-button {
@@ -58,7 +58,7 @@ body {
   align-items: center;
   justify-content: center;
   justify-self:flex-end;
-
+  flex-shrink:0; /*got from the solution; keeps icon from getting deformed*/
 }
 
 button {
