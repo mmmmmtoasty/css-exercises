@@ -5,10 +5,51 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
 }
+
+.header {
+  display:flex;
+  justify-content: space-between;
+}
+
+/*.content {
+  display:flex;
+  flex-direction: column;
+}*/
+
+.footer {
+  display:flex;
+  justify-content: space-between;
+  /*align-content: flex-end;*/
+}
+
+.buttons {
+  display:flex;
+  justify-content: center;
+}
+
+.input {
+  display:flex;
+  justify-content:center;
+}
+
+.left-links, .right-links {
+  display:flex;
+  gap:10px;
+  list-style-type:none;
+  margin:0;
+  padding: 0;
+}
+
 
 img {
   width: 600px;
+  display:flex;
+  justify-content: center;
+  align-content:stretch;
 }
 
 button {
