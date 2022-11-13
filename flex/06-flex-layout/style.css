@@ -13,17 +13,21 @@ body {
 .header {
   display:flex;
   justify-content: space-between;
+  padding:12px;
 }
 
 /*.content {
   display:flex;
   flex-direction: column;
+  justify-content:center;
 }*/
 
 .footer {
   display:flex;
   justify-content: space-between;
-  /*align-content: flex-end;*/
+  align-items: flex-end;
+  background-color: #eeeeee;
+  padding:10px;
 }
 
 .buttons {
@@ -44,6 +48,10 @@ body {
   padding: 0;
 }
 
+a { /*change color and style of header and footer links*/
+  color:black;
+  text-decoration:none;
+}
 .image {
   display:flex;
   justify-content: center;
