@@ -21,6 +21,8 @@ body {
   display:flex;
   flex-direction: column;
   justify-content:center;
+  flex:1; /*from solution: I suppose this keeps page elements from getting squished off of the page*/
+  /*works better than my idea; which was to just put flex:1 on the footer*/
 }
 
 .footer {
