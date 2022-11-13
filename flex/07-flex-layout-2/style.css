@@ -13,12 +13,20 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display:flex;
+  align-items:center;
+  font-weight:bolder;
+  font-size: 30px;
+  padding-left:40px; /*so that the header aligns with the sidebar links*/
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .sidebar {
@@ -32,6 +40,10 @@ a {
   /*styles the links in the sidebar*/
   text-decoration:none;
   color:white;
+}
+
+li {
+  list-style-type: none;
 }
 
 .card-container { /*container that causes cards to wrap and provides proper spacing between cards and other elements on page.*/
