@@ -16,11 +16,12 @@ body {
   padding:12px;
 }
 
-/*.content {
+.content { /*is here to make sure content is spaced far away from header and footer*/
+  height:100%;
   display:flex;
   flex-direction: column;
   justify-content:center;
-}*/
+}
 
 .footer {
   display:flex;
@@ -28,6 +29,7 @@ body {
   align-items: flex-end;
   background-color: #eeeeee;
   padding:10px;
+  flex-shrink:0; /*prevents footer from getting squished when shrinking page*/
 }
 
 .buttons {
@@ -40,7 +42,7 @@ body {
   justify-content:center;
 }
 
-.left-links, .right-links {
+.left-links, .right-links {/*flexbox aligns links next to each other; styling gets rid of bullet points; adds gap*/
   display:flex;
   gap:10px;
   list-style-type:none;
@@ -68,7 +70,7 @@ button {
   background: #eee;
 }
 
-input {
+input {/*refers to input container; not input class. note to self: don't name a class the same as a container or else this could get super confusing*/
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
