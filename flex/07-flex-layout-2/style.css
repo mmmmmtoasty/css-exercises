@@ -4,6 +4,11 @@ body {
   min-height: 100vh;
 }
 
+.content-class {
+  /*cards,sidebar*/
+  display:flex;
+  flex-direction:row;
+}
 .header {
   height: 72px;
   background: darkmagenta;
@@ -19,10 +24,28 @@ body {
 .sidebar {
   width: 300px;
   background: royalblue;
+  display:flex;
+  flex-shrink:0;
+}
+
+a {
+  /*styles the links in the sidebar*/
+  text-decoration:none;
+  color:white;
+}
+
+.card-container { /*container that causes cards to wrap and provides proper spacing between cards and other elements on page.*/
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+  margin:60px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  height: 400px;
+  width: 300px;
+  padding: 32px;
 }
