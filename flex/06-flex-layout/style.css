@@ -44,12 +44,13 @@ body {
   padding: 0;
 }
 
+.image {
+  display:flex;
+  justify-content: center;
+}
 
 img {
   width: 600px;
-  display:flex;
-  justify-content: center;
-  align-content:stretch;
 }
 
 button {
